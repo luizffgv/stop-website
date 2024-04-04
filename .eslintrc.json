@@ -1,0 +1,17 @@
+{
+  "plugins": ["jsdoc", "unicorn"],
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:jsdoc/recommended-typescript",
+    "plugin:unicorn/recommended"
+  ],
+  "rules": {
+    // This will raise errors for variables defined in interfaces
+    "no-unused-vars": "off",
+    // Types and values can share identifiers in TypeScript
+    "no-redeclare": "off",
+    // Prettier causes this
+    "unicorn/no-nested-ternary": "off"
+  }
+}

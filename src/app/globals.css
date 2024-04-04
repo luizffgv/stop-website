@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply rounded-xl bg-blue-900 p-4;
+  }
+}
+
+@layer utilities {
+  .glow {
+    filter: drop-shadow(0 0 15px theme(colors.blue.500 / 50%));
+  }
+
+  .glow-none {
+    filter: none;
+  }
+}
