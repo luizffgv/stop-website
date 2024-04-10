@@ -15,7 +15,7 @@ export const SectionLevelContext = createContext<SectionLevelContext>({
 
 export interface SectionProperties {
   title: ReactNode;
-  children: ReactNode;
+  children?: ReactNode | undefined;
   /** ClassName of the whole section, including the title. */
   className?: string | undefined;
   /** ClassName of contents, excluding the title. */
