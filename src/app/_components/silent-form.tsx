@@ -6,7 +6,7 @@ export interface SilentFormProperties {
   onSubmit?: ((event: FormEvent) => void) | undefined;
   /** ClassName for the form, `"contents"` by default. */
   className?: string | undefined;
-  children: ReactNode;
+  children?: ReactNode | undefined;
 }
 
 /**
