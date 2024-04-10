@@ -6,6 +6,9 @@
     "plugin:jsdoc/recommended-typescript",
     "plugin:unicorn/recommended"
   ],
+  "env": {
+    "jest": true
+  },
   "rules": {
     // This will raise errors for variables defined in interfaces
     "no-unused-vars": "off",
