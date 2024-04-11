@@ -54,14 +54,18 @@ export interface CreationParametersContext {
   setThemes(themes: Set<string>): void;
 }
 
+export const CreationParametersContextDefaultValue = {
+  setNickname: unimplemented,
+  setPassword: unimplemented,
+  setLetter: unimplemented,
+  setLetters: unimplemented,
+  addTheme: unimplemented,
+  removeTheme: unimplemented,
+  setThemes: unimplemented,
+};
+
 /** Context for parameters for creating a room. */
 export const CreationParametersContext =
-  createContext<CreationParametersContext>({
-    setNickname: unimplemented,
-    setPassword: unimplemented,
-    setLetter: unimplemented,
-    setLetters: unimplemented,
-    addTheme: unimplemented,
-    removeTheme: unimplemented,
-    setThemes: unimplemented,
-  });
+  createContext<CreationParametersContext>(
+    CreationParametersContextDefaultValue,
+  );
